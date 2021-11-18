@@ -1,21 +1,22 @@
-import {Box, Typography} from "@mui/material"
+import {Grid, Typography} from "@mui/material"
 
 const Footer = () => {
     return (
       <>
-        <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="text.secondary"
-          component="p"
-        >
-          Something here to give the footer a purpose!
-        </Typography>
-      </Box>
+        <Grid container spacing={2} p={2}>
+            <Grid item>
+                <Typography component="p" align="left">
+                    &copy; 2021 NJ Unearthed, All Rights Reserved.
+                </Typography>
+            </Grid>
+            <Grid item ml="auto">
+                <Typography component="p" align="left">
+                    instagram
+                    twitter 
+                    facebook
+                </Typography>
+            </Grid>
+        </Grid>
       </>
     )
 }
