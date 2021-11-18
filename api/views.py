@@ -1,4 +1,7 @@
 
-# Create your views here.
-def index(request):
-  return "<h1>hi</h1>"
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
+class Index(APIView):
+    def get(self, request):
+        return Response('Welcome to the api')
