@@ -1,11 +1,16 @@
-import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-const PageRouter = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+//Import the pages
+import HomeScreen from "../../../screens/HomeScreen"
+
+function PageRouter() {
+  return (
+    <Router>
+        <Routes>
+            <Route exact path="/" element={<HomeScreen />} />
+        </Routes>
+    </Router>
+  );
 }
 
-export default PageRouter
+export default PageRouter;
